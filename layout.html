@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            text-align: center;
+            background-color: #666;
+            padding: 30px;
+        }
+        
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            padding: 20px;
+            background-color: #cccccc;
+        }
+        
+        article {
+            float: left;
+            width: 70%;
+            height: 300px;
+            padding: 20px;
+            background-color: #f1f1f1
+        }
+        
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #777;
+            color: white;
+        }
+        
+        .menu {
+            float: left;
+            padding: 30px;
+            width: 50%;
+            height: 300px;
+            background-color: #f1f1f1;
+        }
+        
+        .main {
+            float: left;
+            padding: 30px;
+            width: 50%;
+            height: 300px;
+            background-color: #f1f1f1;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 20px;
+        }
+        
+        th {
+            background-color: burlywood;
+        }
+        
+        .duong {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Layout Float</h2>
+    <p>
+        In this example,we have created a header,two colums/boxes and footer.On smaller screens ,the collumns will stack on top of each o ther
+    </p>
+    <p>
+        Resize the browser window to see the responsive effect(you win learn more about this our next chapter -HTML Responsive)
+
+    </p>
+
+    <header>
+        <h1>Cities</h1>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>London</h1>
+            <p>Lodon is the capital city of England.It is the most populous city in the United Kingdom,with a metropolitan area of over 13 milion inhhabitants .
+
+            </p>
+            <p>
+                Standing on the River Thames,London has been a major settlement for two millennia,its history going back to its fouding by the Romans,who named it Londinium.
+            </p>
+
+        </article>
+    </section>
+    <footer>
+        <h3>The End</h3>
+    </footer>
+
+</body>
+
+</html>
+<div class="duong">
+    <h1>Table</h1>
+</div>
+
+
+
+
+
+<table>
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Coutnty</th>
+    </tr>
+    <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+    </tr>
+    <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+    </tr>
+    <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+    </tr>
+    <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+    </tr>
+</table>
+
+
+<h1>Paces to visit</h1>
+<p> Puglia's most famous sight is unquie conical houses (Trulli) found in the area around Alberobello,a declared UNESCO World Heritage Site</p>
+<div class="menu">
+    <figure>
+        <img src="anh2.jfif" alt="Chiu">
+        <figcaption>Anh2-14/01/1999</figcaption>
+</div>
+</figure>
+
+<div class="main
+">
+    <figure>
+        <img src="download.jfif" alt="Kawasaki H2R">
+        <figcaption>Kawasaki H2R-1000CC</figcaption>
+    </figure>
+</div>
+
+<h1>HTLM FORMs</h1>
+<form action="action_page.php">
+    <label for="fname">Tên đầu:</label><br>
+    <input type="text" id="fname" name="fname "><br><br>
+    <label for="lname">Tên cuối:</label><br>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="fullname">Tên đầy đủ:</label><br>
+    <input type="text"><br><br>
+    <input type="submit" value="submit">
+</form>
+
+<h2>The select Element</h2>
+<p>The select element defines a drop-down list:</p>
+
+<form action="">
+    <label for="">Ten Dang Nhap</label><br>
+    <input type="text">
+    <input type="submit">
+</form>

@@ -1,0 +1,37 @@
+#myHeader {
+    background-color: aqua;
+}
+
+.avc {
+    width: 500px;
+    height: 500px;
+    /*border-style: solid;*/
+    border-bottom: solid;
+    border-radius: 100%;
+}
+
+.avc:hover {
+    transform: translate(-4px, -4px);
+}
+
+h1 {
+    margin: 15px 25px 25px 15px;
+    padding: 25px 50px 75px 100px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.cc li {
+    display: inline-block;
+    padding: 100px;
+    font-weight: 600;
+}
+
+
+/*
+block: chiem het 1 dong
+inline: chiem dung chieu dai cua no tren 1 dong, ko chinh dc width, height
+inline-block: chiem dung chieu dai cua no tren 1 dong, chinh dc width, height
+*/
